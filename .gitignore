@@ -72,3 +72,19 @@ yarn-error.log*
 
 # Python
 venv
+
+# Local scientific data and Python caches
+/data/
+.venv/
+__pycache__/
+.pytest_cache/
+playwright-report/
+test-results/
+
+.pnpm-store/
+
+# Local editor / build artifacts
+.DS_Store
+.coverage
+htmlcov/
+

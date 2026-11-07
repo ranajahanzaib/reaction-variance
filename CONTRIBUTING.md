@@ -44,3 +44,13 @@ We welcome contributions of all kinds to improve this project! Here's how you ca
 ### Issues
 
 Feel free to report bugs or suggest enhancements by creating an issue. Be sure to include detailed information about the problem and, if possible, steps to reproduce it.
+
+### Local checks
+
+Use `make install`, `make download`, `make ingest`, `make test`, and `make build`.
+For browser tests, start `make backend` and `make frontend`, then run `make e2e`.
+Synthetic chemistry fixtures belong only in `backend/tests`; published records in
+production must come from the specified ORD source. Changes to extraction or
+matching rules need scientific regression tests and a regenerated data audit.
+Do not commit local source Parquet or SQLite files. Keep code MIT and derived
+ORD data/report attribution CC-BY-SA-4.0.

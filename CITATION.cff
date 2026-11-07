@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: >-
+  If you use ReactionVariance, cite this software and separately cite the
+  source study and Open Reaction Database dataset described in README.md.
+title: ReactionVariance
+abstract: >-
+  A local scientific application for comparing reported yields and recorded
+  experimental conditions across strictly matched published C–N coupling
+  reactions from the Open Reaction Database.
+authors:
+  - family-names: Rana
+    given-names: Jahanzaib
+license: MIT
+type: software
+repository-code: "https://github.com/ranajahanzaib/reaction-variance"

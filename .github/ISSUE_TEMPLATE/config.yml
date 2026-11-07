@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Scientific methodology and data policy
+    url: https://github.com/ranajahanzaib/reaction-variance/blob/main/docs/methodology.md
+    about: Read the extraction, matching, attribution, and interpretation limits.

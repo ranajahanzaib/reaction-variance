@@ -1,0 +1,1525 @@
+{
+  "strict_match": true,
+  "classification": "single_recorded_factor",
+  "delta_percentage_points": 99.18171,
+  "matches": [
+    "substrate_amounts",
+    "ligand",
+    "base",
+    "solvent",
+    "temperature",
+    "duration",
+    "atmosphere",
+    "stirring",
+    "other"
+  ],
+  "differences": ["catalyst"],
+  "missing": [],
+  "matrix": [
+    {
+      "field": "substrate_amounts",
+      "a": "3-Iodopyridine \u00b7 0.04 \u00b5mol + 4-Phenyl Piperidine \u00b7 0.06 \u00b5mol",
+      "b": "3-Iodopyridine \u00b7 0.04 \u00b5mol + 4-Phenyl Piperidine \u00b7 0.06 \u00b5mol",
+      "status": "match"
+    },
+    {
+      "field": "catalyst",
+      "a": "COPPER(I) OXIDE \u00b7 0.004 \u00b5mol",
+      "b": "COPPER(I) CHLORIDE \u00b7 0.004 \u00b5mol",
+      "status": "differ"
+    },
+    {
+      "field": "ligand",
+      "a": "2-[(2,6-Difluorophenyl)amino]-2-oxoacetic acid \u00b7 0.004 \u00b5mol",
+      "b": "2-[(2,6-Difluorophenyl)amino]-2-oxoacetic acid \u00b7 0.004 \u00b5mol",
+      "status": "match"
+    },
+    {
+      "field": "base",
+      "a": "Cs2CO3 \u00b7 0.08 \u00b5mol",
+      "b": "Cs2CO3 \u00b7 0.08 \u00b5mol",
+      "status": "match"
+    },
+    {
+      "field": "solvent",
+      "a": "5 \u00d7 dmso \u00b7 0.2 \u00b5L",
+      "b": "5 \u00d7 dmso \u00b7 0.2 \u00b5L",
+      "status": "match"
+    },
+    {
+      "field": "temperature",
+      "a": "30 \u00b0C",
+      "b": "30 \u00b0C",
+      "status": "match"
+    },
+    {
+      "field": "duration",
+      "a": "18 h",
+      "b": "18 h",
+      "status": "match"
+    },
+    {
+      "field": "atmosphere",
+      "a": "dry nitrogen \u00b7 sealed",
+      "b": "dry nitrogen \u00b7 sealed",
+      "status": "match"
+    },
+    {
+      "field": "stirring",
+      "a": "agitation \u00b7 800 rpm \u00b7 Eppendorf ThermoMixer\u00ae C",
+      "b": "agitation \u00b7 800 rpm \u00b7 Eppendorf ThermoMixer\u00ae C",
+      "status": "match"
+    },
+    {
+      "field": "other",
+      "a": "No other inputs recorded",
+      "b": "No other inputs recorded",
+      "status": "match"
+    }
+  ],
+  "measurement_compatible": true,
+  "explanation": "Both experiments have the same identified substrates and intended product. Recorded differences: catalyst. Recorded differences describe associations, not causes. Unrecorded conditions, setup and assay variability may affect reported yields. Same recorded conditions do not establish independent replicates.",
+  "caveat": "Recorded differences describe associations, not causes. Unrecorded conditions, setup and assay variability may affect reported yields. Same recorded conditions do not establish independent replicates.",
+  "a": {
+    "id": "ord-2365576395864708ae020b624bece2bb",
+    "group_id": "13b15046267b1b7e2a0e",
+    "source_row": 48340,
+    "substrates": [
+      {
+        "smiles": "Ic1cccnc1",
+        "name": "3-Iodopyridine",
+        "identifiers": [
+          {
+            "type": "CUSTOM",
+            "details": "Elec_ChemTypeIdx",
+            "value": "E2"
+          },
+          {
+            "type": "NAME",
+            "value": "3-Iodopyridine"
+          },
+          {
+            "type": "SMILES",
+            "value": "IC1=CC=CN=C1"
+          },
+          {
+            "type": "CAS_NUMBER",
+            "value": "1120-90-7"
+          }
+        ],
+        "issues": [],
+        "amount": {
+          "moles": {
+            "value": 0.04,
+            "units": "MICROMOLE"
+          }
+        }
+      },
+      {
+        "smiles": "c1ccc(C2CCNCC2)cc1",
+        "name": "4-Phenyl Piperidine",
+        "identifiers": [
+          {
+            "type": "CUSTOM",
+            "details": "Nuc_ChemTypeIdx",
+            "value": "N0"
+          },
+          {
+            "type": "NAME",
+            "value": "4-Phenyl Piperidine"
+          },
+          {
+            "type": "SMILES",
+            "value": "C1=CC=C(C2CCNCC2)C=C1"
+          },
+          {
+            "type": "CAS_NUMBER",
+            "value": "771-99-3"
+          }
+        ],
+        "issues": [],
+        "amount": {
+          "moles": {
+            "value": 0.06,
+            "units": "MICROMOLE"
+          }
+        }
+      }
+    ],
+    "products": [
+      {
+        "smiles": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+        "name": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+        "identifiers": [
+          {
+            "type": "SMILES",
+            "value": "C1(N2CCC(C3=CC=CC=C3)CC2)=CC=CN=C1"
+          }
+        ],
+        "issues": [],
+        "amount": null
+      }
+    ],
+    "yield_value": 0.0,
+    "primary_measurement": {
+      "value": 0.0,
+      "valid": true,
+      "type": "YIELD",
+      "unit": "%",
+      "original": {
+        "analysis_key": "UPLC analysis",
+        "type": "YIELD",
+        "details": "assay yield from calibration curve",
+        "uses_internal_standard": true,
+        "is_normalized": true,
+        "uses_authentic_standard": true,
+        "percentage": {
+          "value": 0.0
+        }
+      },
+      "analysis": {
+        "type": "LCMS",
+        "details": "UPLC using 3 \u03bcL of 0.0067 M 1,3,7-trimethylpurine-2,6-dione solution in DMSO internal standard",
+        "is_of_isolated_species": false,
+        "instrument_manufacturer": "Waters Acquity"
+      },
+      "analysis_key": "UPLC analysis",
+      "kind": "analytical",
+      "reaction_time": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "outcome_index": 0,
+      "product_index": 0,
+      "measurement_index": 2,
+      "product": {
+        "smiles": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+        "name": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+        "identifiers": [
+          {
+            "type": "SMILES",
+            "value": "C1(N2CCC(C3=CC=CC=C3)CC2)=CC=CN=C1"
+          }
+        ],
+        "issues": [],
+        "amount": null
+      }
+    },
+    "measurements": [
+      {
+        "value": 0.0,
+        "valid": true,
+        "type": "YIELD",
+        "unit": "%",
+        "original": {
+          "analysis_key": "UPLC analysis",
+          "type": "YIELD",
+          "details": "assay yield from calibration curve",
+          "uses_internal_standard": true,
+          "is_normalized": true,
+          "uses_authentic_standard": true,
+          "percentage": {
+            "value": 0.0
+          }
+        },
+        "analysis": {
+          "type": "LCMS",
+          "details": "UPLC using 3 \u03bcL of 0.0067 M 1,3,7-trimethylpurine-2,6-dione solution in DMSO internal standard",
+          "is_of_isolated_species": false,
+          "instrument_manufacturer": "Waters Acquity"
+        },
+        "analysis_key": "UPLC analysis",
+        "kind": "analytical",
+        "reaction_time": {
+          "value": 18.0,
+          "units": "HOUR"
+        },
+        "outcome_index": 0,
+        "product_index": 0,
+        "measurement_index": 2,
+        "product": {
+          "smiles": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+          "name": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1(N2CCC(C3=CC=CC=C3)CC2)=CC=CN=C1"
+            }
+          ],
+          "issues": [],
+          "amount": null
+        }
+      }
+    ],
+    "conditions": {
+      "catalyst": {
+        "value": [
+          {
+            "identity": "[Cu][O][Cu]",
+            "amount": {
+              "moles": {
+                "value": 0.004,
+                "units": "MICROMOLE"
+              }
+            }
+          }
+        ],
+        "label": "COPPER(I) OXIDE \u00b7 0.004 \u00b5mol",
+        "original": [
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Cat_ChemTypeIdx",
+                "value": "C14"
+              },
+              {
+                "type": "NAME",
+                "value": "COPPER(I) OXIDE"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cu]O[Cu]"
+              },
+              {
+                "type": "CAS_NUMBER",
+                "value": "1317-39-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.004,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "CATALYST",
+            "preparations": [
+              {
+                "type": "NONE"
+              }
+            ]
+          }
+        ]
+      },
+      "ligand": {
+        "value": [
+          {
+            "identity": "O=C(O)C(=O)Nc1c(F)cccc1F",
+            "amount": {
+              "moles": {
+                "value": 0.004,
+                "units": "MICROMOLE"
+              }
+            }
+          }
+        ],
+        "label": "2-[(2,6-Difluorophenyl)amino]-2-oxoacetic acid \u00b7 0.004 \u00b5mol",
+        "original": [
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Lig_ChemTypeIdx",
+                "value": "L142"
+              },
+              {
+                "type": "NAME",
+                "value": "2-[(2,6-Difluorophenyl)amino]-2-oxoacetic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=C(O)C(=O)NC1=C(F)C=CC=C1F"
+              },
+              {
+                "type": "CAS_NUMBER",
+                "value": "1018295-42-5"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.004,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "CATALYST",
+            "preparations": [
+              {
+                "type": "NONE"
+              }
+            ]
+          }
+        ]
+      },
+      "base": {
+        "value": [
+          {
+            "identity": "O=C([O-])[O-].[Cs+]",
+            "amount": {
+              "moles": {
+                "value": 0.08,
+                "units": "MICROMOLE"
+              }
+            }
+          }
+        ],
+        "label": "Cs2CO3 \u00b7 0.08 \u00b5mol",
+        "original": [
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Base_ChemTypeIdx",
+                "value": "B15"
+              },
+              {
+                "type": "NAME",
+                "value": "Cs2CO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=C([O-])[O-].[Cs+]"
+              },
+              {
+                "type": "CAS_NUMBER",
+                "value": "534-17-8"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.08,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "REAGENT",
+            "preparations": [
+              {
+                "type": "CUSTOM",
+                "details": "Dispensed as a 0.1 M solution in water, then the water was removed by two cycles of the microlitre water protocol on a Genevac (2 hours), followed by placing the reaction plate in a desiccator overnight for 18 hours."
+              }
+            ]
+          }
+        ]
+      },
+      "solvent": {
+        "value": [
+          {
+            "identity": "CS(C)=O",
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": false
+            }
+          },
+          {
+            "identity": "CS(C)=O",
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            }
+          },
+          {
+            "identity": "CS(C)=O",
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            }
+          },
+          {
+            "identity": "CS(C)=O",
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            }
+          },
+          {
+            "identity": "CS(C)=O",
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            }
+          }
+        ],
+        "label": "5 \u00d7 dmso \u00b7 0.2 \u00b5L",
+        "original": [
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Solv_ChemTypeIdx",
+                "value": "S0"
+              },
+              {
+                "type": "NAME",
+                "value": "dmso"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(C)=O"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": false
+            },
+            "reaction_role": "SOLVENT"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Solv_ChemTypeIdx",
+                "value": "S0"
+              },
+              {
+                "type": "NAME",
+                "value": "dmso"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(C)=O"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            },
+            "reaction_role": "SOLVENT"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Solv_ChemTypeIdx",
+                "value": "S0"
+              },
+              {
+                "type": "NAME",
+                "value": "dmso"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(C)=O"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            },
+            "reaction_role": "SOLVENT"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Solv_ChemTypeIdx",
+                "value": "S0"
+              },
+              {
+                "type": "NAME",
+                "value": "dmso"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(C)=O"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            },
+            "reaction_role": "SOLVENT"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Solv_ChemTypeIdx",
+                "value": "S0"
+              },
+              {
+                "type": "NAME",
+                "value": "dmso"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(C)=O"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            },
+            "reaction_role": "SOLVENT"
+          }
+        ]
+      },
+      "other": {
+        "value": [],
+        "label": "No other inputs recorded",
+        "original": []
+      },
+      "substrate_amounts": {
+        "value": [
+          {
+            "identity": "Ic1cccnc1",
+            "amount": {
+              "moles": {
+                "value": 0.04,
+                "units": "MICROMOLE"
+              }
+            }
+          },
+          {
+            "identity": "c1ccc(C2CCNCC2)cc1",
+            "amount": {
+              "moles": {
+                "value": 0.06,
+                "units": "MICROMOLE"
+              }
+            }
+          }
+        ],
+        "label": "3-Iodopyridine \u00b7 0.04 \u00b5mol + 4-Phenyl Piperidine \u00b7 0.06 \u00b5mol",
+        "original": [
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Elec_ChemTypeIdx",
+                "value": "E2"
+              },
+              {
+                "type": "NAME",
+                "value": "3-Iodopyridine"
+              },
+              {
+                "type": "SMILES",
+                "value": "IC1=CC=CN=C1"
+              },
+              {
+                "type": "CAS_NUMBER",
+                "value": "1120-90-7"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.04,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "REACTANT",
+            "is_limiting": true,
+            "preparations": [
+              {
+                "type": "NONE"
+              }
+            ]
+          },
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Nuc_ChemTypeIdx",
+                "value": "N0"
+              },
+              {
+                "type": "NAME",
+                "value": "4-Phenyl Piperidine"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=C(C2CCNCC2)C=C1"
+              },
+              {
+                "type": "CAS_NUMBER",
+                "value": "771-99-3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.06,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "REACTANT",
+            "is_limiting": false,
+            "preparations": [
+              {
+                "type": "NONE"
+              }
+            ]
+          }
+        ]
+      },
+      "temperature": {
+        "value": 30.0,
+        "label": "30 \u00b0C",
+        "original": {
+          "value": 30.0,
+          "units": "CELSIUS"
+        }
+      },
+      "duration": {
+        "value": 18.0,
+        "label": "18 h",
+        "original": {
+          "value": 18.0,
+          "units": "HOUR"
+        }
+      },
+      "atmosphere": {
+        "value": {
+          "control": {
+            "type": "SEALED"
+          },
+          "atmosphere": {
+            "type": "NITROGEN",
+            "details": "dry nitrogen"
+          }
+        },
+        "label": "dry nitrogen \u00b7 sealed",
+        "original": {
+          "control": {
+            "type": "SEALED"
+          },
+          "atmosphere": {
+            "type": "NITROGEN",
+            "details": "dry nitrogen"
+          }
+        }
+      },
+      "stirring": {
+        "value": {
+          "type": "AGITATION",
+          "details": "Eppendorf ThermoMixer\u00ae C",
+          "rate": {
+            "rpm": 800
+          }
+        },
+        "label": "agitation \u00b7 800 rpm \u00b7 Eppendorf ThermoMixer\u00ae C",
+        "original": {
+          "type": "AGITATION",
+          "details": "Eppendorf ThermoMixer\u00ae C",
+          "rate": {
+            "rpm": 800
+          }
+        }
+      }
+    },
+    "diagnostics": [],
+    "source_identifiers": [
+      {
+        "type": "REACTION_TYPE",
+        "value": "C\u2013N coupling"
+      },
+      {
+        "type": "CUSTOM",
+        "details": "Sample Name_x",
+        "value": "XZ_01-115-rt_3_B20"
+      },
+      {
+        "type": "CUSTOM",
+        "details": "coded recipe",
+        "value": "L34.W.C6.W.B3.W.E1.W.N1.W"
+      },
+      {
+        "type": "CUSTOM",
+        "details": "experiment",
+        "value": "XZ-01-115"
+      }
+    ],
+    "setup": {
+      "vessel": {
+        "type": "WELL_PLATE",
+        "details": "1536 well plate",
+        "material": {
+          "type": "PLASTIC",
+          "details": "(Greiner # 782270) for reactions at room temperature, or (Labcyte # LP-0400) for reactions at higher temperatures"
+        },
+        "attachments": [
+          {
+            "type": "MAT",
+            "details": "reaction plates were securely sealed using foil sealing tape (BrandTech # 781381)"
+          }
+        ],
+        "volume": {
+          "value": 2.5,
+          "units": "MICROLITER"
+        }
+      },
+      "is_automated": true,
+      "environment": {
+        "type": "GLOVE_BOX"
+      }
+    },
+    "provenance": {
+      "doi": "10.1021/jacs.6c05959"
+    },
+    "dataset_id": "ord_dataset-805ad863feef48579d95d86a728035f4",
+    "source_summary": {
+      "measurement_types": ["AREA", "AREA", "YIELD", "AREA", "YIELD"],
+      "roles": [
+        "SOLVENT",
+        "REACTANT",
+        "SOLVENT",
+        "CATALYST",
+        "SOLVENT",
+        "REACTANT",
+        "SOLVENT",
+        "REAGENT",
+        "CATALYST",
+        "SOLVENT"
+      ]
+    }
+  },
+  "b": {
+    "id": "ord-440750aca6d3422093ac4d79398fb3c3",
+    "group_id": "13b15046267b1b7e2a0e",
+    "source_row": 48342,
+    "substrates": [
+      {
+        "smiles": "Ic1cccnc1",
+        "name": "3-Iodopyridine",
+        "identifiers": [
+          {
+            "type": "CUSTOM",
+            "details": "Elec_ChemTypeIdx",
+            "value": "E2"
+          },
+          {
+            "type": "NAME",
+            "value": "3-Iodopyridine"
+          },
+          {
+            "type": "SMILES",
+            "value": "IC1=CC=CN=C1"
+          },
+          {
+            "type": "CAS_NUMBER",
+            "value": "1120-90-7"
+          }
+        ],
+        "issues": [],
+        "amount": {
+          "moles": {
+            "value": 0.04,
+            "units": "MICROMOLE"
+          }
+        }
+      },
+      {
+        "smiles": "c1ccc(C2CCNCC2)cc1",
+        "name": "4-Phenyl Piperidine",
+        "identifiers": [
+          {
+            "type": "CUSTOM",
+            "details": "Nuc_ChemTypeIdx",
+            "value": "N0"
+          },
+          {
+            "type": "NAME",
+            "value": "4-Phenyl Piperidine"
+          },
+          {
+            "type": "SMILES",
+            "value": "C1=CC=C(C2CCNCC2)C=C1"
+          },
+          {
+            "type": "CAS_NUMBER",
+            "value": "771-99-3"
+          }
+        ],
+        "issues": [],
+        "amount": {
+          "moles": {
+            "value": 0.06,
+            "units": "MICROMOLE"
+          }
+        }
+      }
+    ],
+    "products": [
+      {
+        "smiles": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+        "name": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+        "identifiers": [
+          {
+            "type": "SMILES",
+            "value": "C1(N2CCC(C3=CC=CC=C3)CC2)=CC=CN=C1"
+          }
+        ],
+        "issues": [],
+        "amount": null
+      }
+    ],
+    "yield_value": 99.18171,
+    "primary_measurement": {
+      "value": 99.18171,
+      "valid": true,
+      "type": "YIELD",
+      "unit": "%",
+      "original": {
+        "analysis_key": "UPLC analysis",
+        "type": "YIELD",
+        "details": "assay yield from calibration curve",
+        "uses_internal_standard": true,
+        "is_normalized": true,
+        "uses_authentic_standard": true,
+        "percentage": {
+          "value": 99.18171
+        }
+      },
+      "analysis": {
+        "type": "LCMS",
+        "details": "UPLC using 3 \u03bcL of 0.0067 M 1,3,7-trimethylpurine-2,6-dione solution in DMSO internal standard",
+        "is_of_isolated_species": false,
+        "instrument_manufacturer": "Waters Acquity"
+      },
+      "analysis_key": "UPLC analysis",
+      "kind": "analytical",
+      "reaction_time": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "outcome_index": 0,
+      "product_index": 0,
+      "measurement_index": 2,
+      "product": {
+        "smiles": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+        "name": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+        "identifiers": [
+          {
+            "type": "SMILES",
+            "value": "C1(N2CCC(C3=CC=CC=C3)CC2)=CC=CN=C1"
+          }
+        ],
+        "issues": [],
+        "amount": null
+      }
+    },
+    "measurements": [
+      {
+        "value": 99.18171,
+        "valid": true,
+        "type": "YIELD",
+        "unit": "%",
+        "original": {
+          "analysis_key": "UPLC analysis",
+          "type": "YIELD",
+          "details": "assay yield from calibration curve",
+          "uses_internal_standard": true,
+          "is_normalized": true,
+          "uses_authentic_standard": true,
+          "percentage": {
+            "value": 99.18171
+          }
+        },
+        "analysis": {
+          "type": "LCMS",
+          "details": "UPLC using 3 \u03bcL of 0.0067 M 1,3,7-trimethylpurine-2,6-dione solution in DMSO internal standard",
+          "is_of_isolated_species": false,
+          "instrument_manufacturer": "Waters Acquity"
+        },
+        "analysis_key": "UPLC analysis",
+        "kind": "analytical",
+        "reaction_time": {
+          "value": 18.0,
+          "units": "HOUR"
+        },
+        "outcome_index": 0,
+        "product_index": 0,
+        "measurement_index": 2,
+        "product": {
+          "smiles": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+          "name": "c1ccc(C2CCN(c3cccnc3)CC2)cc1",
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1(N2CCC(C3=CC=CC=C3)CC2)=CC=CN=C1"
+            }
+          ],
+          "issues": [],
+          "amount": null
+        }
+      }
+    ],
+    "conditions": {
+      "catalyst": {
+        "value": [
+          {
+            "identity": "[Cl][Cu]",
+            "amount": {
+              "moles": {
+                "value": 0.004,
+                "units": "MICROMOLE"
+              }
+            }
+          }
+        ],
+        "label": "COPPER(I) CHLORIDE \u00b7 0.004 \u00b5mol",
+        "original": [
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Cat_ChemTypeIdx",
+                "value": "C18"
+              },
+              {
+                "type": "NAME",
+                "value": "COPPER(I) CHLORIDE"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl[Cu]"
+              },
+              {
+                "type": "CAS_NUMBER",
+                "value": "7758-89-6"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.004,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "CATALYST",
+            "preparations": [
+              {
+                "type": "NONE"
+              }
+            ]
+          }
+        ]
+      },
+      "ligand": {
+        "value": [
+          {
+            "identity": "O=C(O)C(=O)Nc1c(F)cccc1F",
+            "amount": {
+              "moles": {
+                "value": 0.004,
+                "units": "MICROMOLE"
+              }
+            }
+          }
+        ],
+        "label": "2-[(2,6-Difluorophenyl)amino]-2-oxoacetic acid \u00b7 0.004 \u00b5mol",
+        "original": [
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Lig_ChemTypeIdx",
+                "value": "L142"
+              },
+              {
+                "type": "NAME",
+                "value": "2-[(2,6-Difluorophenyl)amino]-2-oxoacetic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=C(O)C(=O)NC1=C(F)C=CC=C1F"
+              },
+              {
+                "type": "CAS_NUMBER",
+                "value": "1018295-42-5"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.004,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "CATALYST",
+            "preparations": [
+              {
+                "type": "NONE"
+              }
+            ]
+          }
+        ]
+      },
+      "base": {
+        "value": [
+          {
+            "identity": "O=C([O-])[O-].[Cs+]",
+            "amount": {
+              "moles": {
+                "value": 0.08,
+                "units": "MICROMOLE"
+              }
+            }
+          }
+        ],
+        "label": "Cs2CO3 \u00b7 0.08 \u00b5mol",
+        "original": [
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Base_ChemTypeIdx",
+                "value": "B15"
+              },
+              {
+                "type": "NAME",
+                "value": "Cs2CO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=C([O-])[O-].[Cs+]"
+              },
+              {
+                "type": "CAS_NUMBER",
+                "value": "534-17-8"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.08,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "REAGENT",
+            "preparations": [
+              {
+                "type": "CUSTOM",
+                "details": "Dispensed as a 0.1 M solution in water, then the water was removed by two cycles of the microlitre water protocol on a Genevac (2 hours), followed by placing the reaction plate in a desiccator overnight for 18 hours."
+              }
+            ]
+          }
+        ]
+      },
+      "solvent": {
+        "value": [
+          {
+            "identity": "CS(C)=O",
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": false
+            }
+          },
+          {
+            "identity": "CS(C)=O",
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            }
+          },
+          {
+            "identity": "CS(C)=O",
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            }
+          },
+          {
+            "identity": "CS(C)=O",
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            }
+          },
+          {
+            "identity": "CS(C)=O",
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            }
+          }
+        ],
+        "label": "5 \u00d7 dmso \u00b7 0.2 \u00b5L",
+        "original": [
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Solv_ChemTypeIdx",
+                "value": "S0"
+              },
+              {
+                "type": "NAME",
+                "value": "dmso"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(C)=O"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": false
+            },
+            "reaction_role": "SOLVENT"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Solv_ChemTypeIdx",
+                "value": "S0"
+              },
+              {
+                "type": "NAME",
+                "value": "dmso"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(C)=O"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            },
+            "reaction_role": "SOLVENT"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Solv_ChemTypeIdx",
+                "value": "S0"
+              },
+              {
+                "type": "NAME",
+                "value": "dmso"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(C)=O"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            },
+            "reaction_role": "SOLVENT"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Solv_ChemTypeIdx",
+                "value": "S0"
+              },
+              {
+                "type": "NAME",
+                "value": "dmso"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(C)=O"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            },
+            "reaction_role": "SOLVENT"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Solv_ChemTypeIdx",
+                "value": "S0"
+              },
+              {
+                "type": "NAME",
+                "value": "dmso"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(C)=O"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.2,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": true
+            },
+            "reaction_role": "SOLVENT"
+          }
+        ]
+      },
+      "other": {
+        "value": [],
+        "label": "No other inputs recorded",
+        "original": []
+      },
+      "substrate_amounts": {
+        "value": [
+          {
+            "identity": "Ic1cccnc1",
+            "amount": {
+              "moles": {
+                "value": 0.04,
+                "units": "MICROMOLE"
+              }
+            }
+          },
+          {
+            "identity": "c1ccc(C2CCNCC2)cc1",
+            "amount": {
+              "moles": {
+                "value": 0.06,
+                "units": "MICROMOLE"
+              }
+            }
+          }
+        ],
+        "label": "3-Iodopyridine \u00b7 0.04 \u00b5mol + 4-Phenyl Piperidine \u00b7 0.06 \u00b5mol",
+        "original": [
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Elec_ChemTypeIdx",
+                "value": "E2"
+              },
+              {
+                "type": "NAME",
+                "value": "3-Iodopyridine"
+              },
+              {
+                "type": "SMILES",
+                "value": "IC1=CC=CN=C1"
+              },
+              {
+                "type": "CAS_NUMBER",
+                "value": "1120-90-7"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.04,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "REACTANT",
+            "is_limiting": true,
+            "preparations": [
+              {
+                "type": "NONE"
+              }
+            ]
+          },
+          {
+            "identifiers": [
+              {
+                "type": "CUSTOM",
+                "details": "Nuc_ChemTypeIdx",
+                "value": "N0"
+              },
+              {
+                "type": "NAME",
+                "value": "4-Phenyl Piperidine"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=C(C2CCNCC2)C=C1"
+              },
+              {
+                "type": "CAS_NUMBER",
+                "value": "771-99-3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.06,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "REACTANT",
+            "is_limiting": false,
+            "preparations": [
+              {
+                "type": "NONE"
+              }
+            ]
+          }
+        ]
+      },
+      "temperature": {
+        "value": 30.0,
+        "label": "30 \u00b0C",
+        "original": {
+          "value": 30.0,
+          "units": "CELSIUS"
+        }
+      },
+      "duration": {
+        "value": 18.0,
+        "label": "18 h",
+        "original": {
+          "value": 18.0,
+          "units": "HOUR"
+        }
+      },
+      "atmosphere": {
+        "value": {
+          "control": {
+            "type": "SEALED"
+          },
+          "atmosphere": {
+            "type": "NITROGEN",
+            "details": "dry nitrogen"
+          }
+        },
+        "label": "dry nitrogen \u00b7 sealed",
+        "original": {
+          "control": {
+            "type": "SEALED"
+          },
+          "atmosphere": {
+            "type": "NITROGEN",
+            "details": "dry nitrogen"
+          }
+        }
+      },
+      "stirring": {
+        "value": {
+          "type": "AGITATION",
+          "details": "Eppendorf ThermoMixer\u00ae C",
+          "rate": {
+            "rpm": 800
+          }
+        },
+        "label": "agitation \u00b7 800 rpm \u00b7 Eppendorf ThermoMixer\u00ae C",
+        "original": {
+          "type": "AGITATION",
+          "details": "Eppendorf ThermoMixer\u00ae C",
+          "rate": {
+            "rpm": 800
+          }
+        }
+      }
+    },
+    "diagnostics": [],
+    "source_identifiers": [
+      {
+        "type": "REACTION_TYPE",
+        "value": "C\u2013N coupling"
+      },
+      {
+        "type": "CUSTOM",
+        "details": "Sample Name_x",
+        "value": "XZ_01-115-rt_3_B18"
+      },
+      {
+        "type": "CUSTOM",
+        "details": "coded recipe",
+        "value": "L34.W.C5.W.B3.W.E1.W.N1.W"
+      },
+      {
+        "type": "CUSTOM",
+        "details": "experiment",
+        "value": "XZ-01-115"
+      }
+    ],
+    "setup": {
+      "vessel": {
+        "type": "WELL_PLATE",
+        "details": "1536 well plate",
+        "material": {
+          "type": "PLASTIC",
+          "details": "(Greiner # 782270) for reactions at room temperature, or (Labcyte # LP-0400) for reactions at higher temperatures"
+        },
+        "attachments": [
+          {
+            "type": "MAT",
+            "details": "reaction plates were securely sealed using foil sealing tape (BrandTech # 781381)"
+          }
+        ],
+        "volume": {
+          "value": 2.5,
+          "units": "MICROLITER"
+        }
+      },
+      "is_automated": true,
+      "environment": {
+        "type": "GLOVE_BOX"
+      }
+    },
+    "provenance": {
+      "doi": "10.1021/jacs.6c05959"
+    },
+    "dataset_id": "ord_dataset-805ad863feef48579d95d86a728035f4",
+    "source_summary": {
+      "measurement_types": ["AREA", "AREA", "YIELD", "AREA", "YIELD"],
+      "roles": [
+        "SOLVENT",
+        "REACTANT",
+        "SOLVENT",
+        "CATALYST",
+        "SOLVENT",
+        "REACTANT",
+        "SOLVENT",
+        "REAGENT",
+        "CATALYST",
+        "SOLVENT"
+      ]
+    }
+  }
+}
