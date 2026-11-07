@@ -41,7 +41,7 @@ make serve
 # Open http://127.0.0.1:8011
 ```
 
-The source and database are ignored under `data/`. `make rebuild` regenerates the database and audit from the cached source without downloading again. `make download` reuses an existing source file and prints its SHA-256. Delete only `data/raw/source.parquet` to explicitly fetch a new snapshot; compare checksums and regenerate the audit before interpreting changes. To use a separate database, export `REACTION_DB=/absolute/path/file.sqlite` before starting the server. No `.env` loader or configuration file is required.
+The source and database are ignored under `data/`. `make rebuild` regenerates the database and audit from the cached source without downloading again. `make download` reuses an existing source file and prints its SHA-256. A newer source snapshot can be fetched by removing `data/raw/source.parquet` before running `make download`; every import records its checksum and regenerates the audit. An alternate database path can be set with `REACTION_DB=/absolute/path/file.sqlite`. No `.env` loader or configuration file is required.
 
 ## The actual data
 
@@ -62,7 +62,7 @@ in C–N Couplings_](https://doi.org/10.1021/jacs.6c05959).
 | Reaction-time coverage              | 50,688; all 18 h |
 | Temperature values                  |    30, 60, 80 °C |
 
-All records enter strict groups; flagged measurements remain inspectable but never enter valid-yield summaries. The source contains only four substrate combinations, not a full cross-product of the advertised two amines and four aryl halides. Read the [generated data audit](reports/data-audit.md), [machine-readable provenance](reports/data-audit.json), and [extraction/matching policy](docs/methodology.md).
+All records enter strict groups; flagged measurements remain inspectable but never enter valid-yield summaries. The source contains only four substrate combinations, not a full cross-product of the advertised two amines and four aryl halides. The [generated data audit](reports/data-audit.md), [machine-readable provenance](reports/data-audit.json), and [extraction/matching policy](docs/methodology.md) describe coverage and processing in detail.
 
 ## A real comparison
 
@@ -78,7 +78,7 @@ Group `13b15046267b1b7e2a0e`: **3-iodopyridine + 4-phenylpiperidine**, with the 
 | Solvent                     | recorded DMSO inventory                        | same                                   |
 | Temperature / reaction time | 30 °C / 18 h                                   | same                                   |
 
-The recorded difference is the catalyst factor. Other tracked factors and quantities match. The difference is **99.18171 percentage points**, with LCMS analytical yield measurements from calibration curves. This does not establish that the catalyst caused the difference. Unrecorded factors and assay variability may contribute. Full provenance is saved in [the verified comparison](reports/verified-comparison.json). Paste the two IDs into `/api/compare?reaction_ids=ID_A,ID_B`, or open the first suggested contrast in the first group.
+The recorded difference is the catalyst factor. Other tracked factors and quantities match. The difference is **99.18171 percentage points**, with LCMS analytical yield measurements from calibration curves. This does not establish that the catalyst caused the difference. Unrecorded factors and assay variability may contribute. Full provenance is available in [the verified comparison](reports/verified-comparison.json) and through `/api/compare?reaction_ids=ord-2365576395864708ae020b624bece2bb,ord-440750aca6d3422093ac4d79398fb3c3`.
 
 ## Scientific rules and limitations
 
@@ -113,10 +113,10 @@ make e2e              # real-data desktop + mobile workflows and screenshots
 make format
 ```
 
-Tests separate synthetic scientific edge cases from actual-dataset integration checks. Synthetic fixtures never enter the application database. Integration tests skip explicitly if no database exists; run ingestion before full verification. E2E tests block nonlocal requests, verify group selection, filters, empty states, selection, single-factor highlights, CSV contents, responsive width, automated accessibility checks, and screenshots in `docs/`. GitHub Actions is configured to download/import before integration tests; hosted CI has not been run.
+Tests separate synthetic scientific edge cases from actual-dataset integration checks. Synthetic fixtures never enter the application database. Integration tests skip explicitly if no local database exists; full integration coverage includes dataset ingestion. E2E tests block nonlocal requests and verify group selection, filters, empty states, selection, single-factor highlights, CSV contents, responsive width, accessibility checks, and screenshots in `docs/`. The GitHub Actions workflow imports the dataset before running integration tests.
 
-Future work could add validated quantity-unit equivalence, richer source batch metadata, and more precise time-series measurement inspection. Arbitrary uploads, optimization, prediction and additional reaction families remain outside this MVP.
+This release covers the specified ORD C–N coupling dataset. Arbitrary dataset uploads, optimization, yield prediction, and additional reaction families are outside its current scope.
 
 ## Licenses and attribution
 
-Application code: [MIT](LICENSE). The upstream ORD dataset is CC-BY-SA-4.0; consult the [ORD license and attribution terms](https://creativecommons.org/licenses/by-sa/4.0/) when redistributing source or derived data. Generated audits, comparison exports, and source-derived records retain dataset attribution and licensing information. The code license does not change the dataset license. Source URL, DOI, checksum, parser/package versions, and import timestamp are recorded in the audit.
+Application code is licensed under [MIT](LICENSE). The upstream ORD dataset is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/). Generated audits, comparison exports, and source-derived records retain dataset attribution and licensing information. The software license does not change the dataset license. The audit records the source URL, DOI, checksum, parser and package versions, and import timestamp.

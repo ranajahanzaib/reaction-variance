@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: >-
-  If you use ReactionVariance, cite this software and separately cite the
-  source study and Open Reaction Database dataset described in README.md.
+  Citation metadata for ReactionVariance. Dataset and source-study attribution
+  are documented in README.md.
 title: ReactionVariance
 abstract: >-
   A local scientific application for comparing reported yields and recorded
